@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Random Joke Fetcher
 
-## Getting Started
+This project is a simple web application that fetches and displays a random joke from an API. The user can click the "Get New Joke" button to fetch a new random joke. The app is built using React, TypeScript, and Tailwind CSS, and it utilizes the `official-joke-api` to retrieve jokes.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Fetches a random joke using the [Official Joke API](https://official-joke-api.appspot.com/random_joke).
+- Displays both the joke setup and punchline.
+- Provides a button to fetch a new joke.
+- Responsive design with Tailwind CSS for a modern UI.
+- Error handling for failed API calls.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **React**: For building the user interface.
+- **TypeScript**: For type-safe JavaScript development.
+- **Tailwind CSS**: For styling and responsive design.
+- **Official Joke API**: For fetching random jokes.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## How It Works
 
-## Learn More
+1. The app fetches a random joke on page load using the `useEffect` hook.
+2. A user can click the "Get New Joke" button to fetch another random joke.
+3. The app displays the setup and punchline together in a card-like interface.
+4. It handles errors gracefully if the joke fails to load.
 
-To learn more about Next.js, take a look at the following resources:
+## Code Overview
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **RandomJokeComponent**: 
+  - Fetches a random joke from the API.
+  - Displays the joke or a loading message.
+  - Includes a button for fetching a new joke.
+  
+### `fetchJoke` Function
+- Fetches the joke data from the API and updates the state.
+- Handles errors by displaying a failure message in case the API request fails.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Styling
 
-## Deploy on Vercel
+- The app uses Tailwind CSS to achieve a clean and modern UI.
+- The background has a gradient from red to purple.
+- A joke card is displayed in the center of the screen.
+- The button has a hover effect and rounded corners for better user interaction.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## How to Run Locally
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/yourusername/random-joke-fetcher.git
+   ```
+2. Install the dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open the app at `http://localhost:3000`.
+
+## Deployment
+
+You can deploy this project using services like Vercel or Netlify. Below is a link of deployment of this project.
+
+### [Deployment Link](#)
+
+## API Reference
+
+- [Official Joke API](https://official-joke-api.appspot.com/random_joke)
