@@ -46,7 +46,7 @@ This project is a simple web application that fetches and displays a random joke
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/random-joke-fetcher.git
+   git clone https://github.com/Sheikh-Muhammad-Mujtaba/random_joke_generator.git
    ```
 2. Install the dependencies:
    ```bash
@@ -63,7 +63,7 @@ This project is a simple web application that fetches and displays a random joke
 
 You can deploy this project using services like Vercel or Netlify. Below is a link of deployment of this project.
 
-### [Deployment Link](#)
+### [Deployment Link](https://random-joke-generator-kappa.vercel.app/)
 
 ## API Reference
 
